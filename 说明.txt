@@ -1,0 +1,6 @@
+1、importdata文件夹和importdata_test压缩包的数据是一样子的2
+2、使用流程：
+	（1）使用时只要把importdata文件夹拷入neo4j安装目录下的bin文件夹中
+	（2）命令行运行代码：neo4j-admin import --mode=csv --database=graph.db --nodes importdata\chem.csv  --nodes importdata\dis.csv  --nodes importdata\gene.csv  --relationships importdata\relationship.csv
+3、结果：会在neo4j安装目录下的data\databases文件夹中生成一个graph.db的知识图谱
+4、注意事项：数据处理必须按照格式，不能随意处理，要有name:ID和:label这两列。
